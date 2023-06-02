@@ -66,10 +66,11 @@
         <ul>
             <input type="text" placeholder="  Search user" id="search"></input>
             <div class="i"><img src="./Media/search.png"></div><br>
-            <button type="button">filter</button>
+            <button>filter</button>
         </ul>
         <div class="sub-menu-wrap" id="subMenu">
             <div class="sub-menu">
+                <a href="#" class="sub-menu-link" onclick="toggleMenu()"></i><p>X</p></a>
                 <a href="#" class="sub-menu-link"><i class="fa-regular fa-pen-to-square"></i><p>edit</p><span>></span></a>
                 <a href="#" class="sub-menu-link"><i class="fa-regular fa-trash-can"></i><p>remove</p><span>></span></a>
             </div>
@@ -84,9 +85,99 @@
                 <th> role</th>
                 <th> Number</th>
                 <th> Action</th>
-                <th> option <span onclick="toggleMenu()">:</span></th>
+                <th> option <span>:</span></th>
             </tr>
-        </thead> 
+        </thead>
+        <tbody id="tableData">
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>#12345</td>
+                <td>Kyle Illagan</td>
+                <td>papakyle@gmail.com</a></td>
+                <td>volunteer</td>
+                <td>24</td>
+                <td><button>view</button></td>
+                <td><span onclick="toggleMenu()">:</span></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>#12345</td>
+                <td>Jedsus Fries</td>
+                <td>FriestheRold@gmail.com</a></td>
+                <td>volunteer</td>
+                <td>19</td>
+                <td><button>view</button></td>
+                <td ><span onclick="toggleMenu()">:</span></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>#12345</td>
+                <td>Vincent Coralde</td>
+                <td>gwiyomi123@gmail.com</a></td>
+                <td>donor</td>
+                <td>43</td>
+                <td><button>view</button></td>
+                <td><span onclick="toggleMenu()">:</span></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>#12345</td>
+                <td>Janet Jackson</td>
+                <td>Janet@gmail.com</a></td>
+                <td>author</td>
+                <td>57</td>
+                <td><button>view</button></td>
+                <td><span onclick="toggleMenu()">:</span></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>#12345</td>
+                <td>Bob Seger</td>
+                <td>bobseger@gmail.com</a></td>
+                <td>contributor</td>
+                <td>74</td>
+                <td><button>view</button></td>
+                <td><span onclick="toggleMenu()">:</span></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>#12345</td>
+                <td>Toni Flower</td>
+                <td>meronKabangLemon@gmail.com</a></td>
+                <td>contributor</td>
+                <td>64</td>
+                <td><button>view</button></td>
+                <td><span onclick="toggleMenu()">:</span></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>#12345</td>
+                <td>Toni Flower</td>
+                <td>meronKabangLemon@gmail.com</a></td>
+                <td>contributor</td>
+                <td>64</td>
+                <td><button>view</button></td>
+                <td><span onclick="toggleMenu()">:</span></td>
+            </tr> 
+        </tbody>
+        </table>
+    </div>
+        <div class="bottom-field">
+            <p>1</p>
+            <p>-5 of 56</p>
+            <ul class="pagination">
+                <li><a href="#" id="prev"><button class="prev">&#139;</button></a></li>
+                <li><a href="#" id="next"><button class="next">&#155;</button></a></li>
+                <p>The page you're on</p>
+                <select name="" id="option">
+                    <option value="1" id="page1">1</option>
+                    <option value="2" id="2">2</option>
+                    <option value="2"id="3">3</option>
+                </select>
+                
+              <div name="" id="border">
+                </div>
+              </ul>
 
 <script src="./java/app.js"></script>
 </body>
